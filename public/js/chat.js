@@ -3,6 +3,7 @@ $( document ).ready(function() {
   socket.on('connect', function() {
     socket.emit('join', $('#chatroom').val());
   });
+  
   socket.on('message', function (data) {
     var updatedLi = '<li><b>'+data.user+'</b> : '+data.message +'</li>'
     $(updatedLi).appendTo('#conv_list')
