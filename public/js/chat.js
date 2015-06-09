@@ -7,8 +7,7 @@ $( document ).ready(function() {
     var updatedLi = '<li><b>'+data.user+'</b> : '+data.message +'</li>'
     $(updatedLi).appendTo('#conv_list')
   });
-
-
+  
   $('#post_message').on('click', function(){
     if($('#my_message').val() != "")
     {
