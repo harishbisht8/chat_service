@@ -6,6 +6,8 @@ module.exports = function (io) {
         socket.broadcast.to(room).emit('message', msg);
       });
     });
+    
+    
    /* socket.emit('message', { user: 'Server', message:'Welcome to harish quich chat service :P' });
     socket.on('message', function (data) {
       console.log('again');
