@@ -27,7 +27,6 @@ app.post('/chat', function (req, res) {
   res.render('chat', req.body);
 });
 
-
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
     var err = new Error('No Mapping Found');
